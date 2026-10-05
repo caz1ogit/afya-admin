@@ -6,6 +6,7 @@
         <MudAvatar Size="Size.Large" Class="@Ui.FundoSuave(Kpi.Cor)">
             <MudIcon Icon="@Kpi.Icone" Color="@Kpi.Cor" />
         </MudAvatar>
+        @* asdsadsa *@
         <div>
             <MudText Typo="Typo.body2" Class="mud-text-secondary">@Kpi.Titulo</MudText>
             <MudText Typo="Typo.h5">@Kpi.Valor</MudText>
@@ -28,7 +29,7 @@
     [Parameter, EditorRequired] public Kpi Kpi { get; set; } = default!;
     private List<ChartSeries<double>> _series = new List<ChartSeries<double>>();
     private string[] _rotulos = Array.Empty<string>();
-    private LineChartOptions _opcoes = new();
+    private LineChartOptions _opcoes = new LineChartOptions();
     private Color CorTendencia => Kpi.Positivo ? Color.Success : Color.Error;
     protected override void OnParametersSet()
     {
