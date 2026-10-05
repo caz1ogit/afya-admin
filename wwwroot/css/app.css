@@ -108,3 +108,23 @@ code {
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
     text-align: start;
 }
+
+/* Workaround: corrige padding:auto invalido do MudBlazor */
+.pa-auto, .px-auto, .py-auto, .pt-auto, .pb-auto, .pl-auto, .pr-auto, .ps-auto, .pe-auto,
+.pa-sm-auto, .px-sm-auto, .py-sm-auto, .pt-sm-auto, .pb-sm-auto, .pl-sm-auto, .pr-sm-auto, .ps-sm-auto, .pe-sm-auto,
+.pa-md-auto, .px-md-auto, .py-md-auto, .pt-md-auto, .pb-md-auto, .pl-md-auto, .pr-md-auto, .ps-md-auto, .pe-md-auto,
+.pa-lg-auto, .px-lg-auto, .py-lg-auto, .pt-lg-auto, .pb-lg-auto, .pl-lg-auto, .pr-lg-auto, .ps-lg-auto, .pe-lg-auto,
+.pa-xl-auto, .px-xl-auto, .py-xl-auto, .pt-xl-auto, .pb-xl-auto, .pl-xl-auto, .pr-xl-auto, .ps-xl-auto, .pe-xl-auto,
+.pa-xxl-auto, .px-xxl-auto, .py-xxl-auto, .pt-xxl-auto, .pb-xxl-auto, .pl-xxl-auto, .pr-xxl-auto, .ps-xxl-auto, .pe-xxl-auto {
+    padding: 0 !important;
+}
+
+/* Workaround: corrige outline-style:hidden invalido */
+.outline-hidden {
+    outline-style: none !important;
+}
+
+/* Workaround: corrige cursor:url vazio */
+.cursor-url {
+    cursor: default !important;
+}
